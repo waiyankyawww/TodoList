@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="container">
         <h1 class="m-10 p-10">Todo Lists</h1>
         <ul class="list-group">
@@ -13,4 +14,5 @@
         </ul>
         <a href="/todos/create" class="btn btn-primary">Add new Todo</a>
     </div>
+    
 @endsection

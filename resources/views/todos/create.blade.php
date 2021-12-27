@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="container">
         <form action="/todos" method="post">
             @csrf
@@ -9,4 +10,5 @@
             <input type="submit" value="Add New One">
         </form>
     </div>
+    
 @endsection
