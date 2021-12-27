@@ -5,7 +5,10 @@
         <h1 class="m-10 p-10">Todo Lists</h1>
         <ul class="list-group">
             @foreach ($todos as $todo)
-                <li class="list-group-item"> {{ $todo->name }} </li>
+                <li class="list-group-item">
+                     {{ $todo->name }} 
+                    <a href="{{ url("/todos/$todo->id") }}">Detail</a>    
+                </li>
             @endforeach
         </ul>
         <a href="/todos/create" class="btn btn-primary">Add new Todo</a>

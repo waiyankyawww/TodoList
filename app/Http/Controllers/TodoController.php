@@ -57,7 +57,7 @@ class TodoController extends Controller
         $todo = Todo::find($id);
 
         return view('todos.detail', [
-            'todo' => $todo
+            'todo' => $todo 
         ]);
     }
 
